@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.codice {
+    width: 350px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+
+    background-color: #13101b;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+
+    position: relative;
+    transition: 150ms ease-in-out;
+}
+
+.codice > p {
+    height: 20px;
+
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(197, 200, 198);
+}
+
+.codice *::selection {
+    background-color: #9e7bb5;
+    color: antiquewhite;
+}
+
+.codice b {
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+.codice > .tab {
+    text-indent: 15px;
+}
+
+.codice > .tabb {
+    text-indent: 30px;
+}
+
+.codice .keywords {
+    color: rgb(129, 162, 190);
+}
+
+.codice .names {
+    color: rgb(240, 198, 116);
+}
+
+.codice .strings {
+    color: rgb(181, 189, 104);
+}
+
+.codice > .button {
+    width: 10px;
+
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 10px;
+}
+
+.codice > .close {
+    background-color: #ff605c;
+    left: 10px;
+}
+
+.codice > .minimize {
+    background-color: #ffbd44;
+    left: 25px;
+}
+
+.codice > .maximize {
+    background-color: #00ca4e;
+    left: 40px;
+}
+
+.links {
+    height: 50px;
+    margin-top: -20px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: rgba(120, 154, 130);
+    border-radius: 15px;
+    z-index: 4;
+    transition: 150ms ease-in-out;
+}
+
+.links > a {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.links > a > i {
+    font-size: 20px;
+}
+
+.codice:hover, .links:hover {
+    transition: 150ms ease-in-out;
+    scale: 105%;
+}
+
+.codered {
+    background-color: #6e100c;
+}
+
+.codered > h1 {
+    width: 30px;
+
+    font-size: 30px;
+
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+}
+
+.codered > h3 {
+    font-family: monospace;
+
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
