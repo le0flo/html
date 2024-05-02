@@ -3,15 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://le0nardo.dev/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>404</title>
+    <title>Errore</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .codice {
+            width: 350px;
+            height: 200px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+
+            background-color: #13101b;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+
+            position: relative;
+            transition: 150ms ease-in-out;
+        }
+
+        .codice > p {
+            height: 20px;
+
+            font-family: monospace;
+            font-size: 12px;
+            font-weight: 400;
+            color: rgb(197, 200, 198);
+        }
+        
+        .codice > .button {
+            width: 10px;
+
+            aspect-ratio: 1/1;
+            border-radius: 10px;
+
+            position: absolute;
+            top: 10px;
+        }
+
+        .codice > .close {
+            background-color: #ff605c;
+            left: 10px;
+        }
+
+        .codice > .minimize {
+            background-color: #ffbd44;
+            left: 25px;
+        }
+
+        .codice > .maximize {
+            background-color: #00ca4e;
+            left: 40px;
+        }
+
+        .codice *::selection {
+            background-color: #9e7bb5;
+            color: antiquewhite;
+        }
+
+        .codered {
+            background-color: #6e100c;
+        }
+
+        .codered > h1 {
+            width: 30px;
+
+            font-size: 30px;
+
+            aspect-ratio: 1/1;
+            position: absolute;
+            top: calc(50% - 15px);
+            left: calc(50% - 15px);
+        }
+
+        .codered > h3 {
+            font-family: monospace;
+
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="codice codered">
-        <a href="https://www.youtube.com/watch?v=s_Dp7SHfq-U" class="button close"></a>
-        <a href="https://archlinux.org/" class="button minimize"></a>
-        <a href="https://files.le0nardo.dev" class="button maximize"></a>
+        <a href="https://le0nardo.dev" class="button close"></a>
+        <a href="https://le0nardo.dev" class="button minimize"></a>
+        <a href="https://le0nardo.dev" class="button maximize"></a>
 
         <h1><i class="fa-solid fa-skull-crossbones"></i></h1>
         <h3>> C'è stato un errore</h3>
