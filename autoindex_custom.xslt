@@ -26,9 +26,18 @@
                         border-radius: 10px;
                     }
 
+                    th {
+                        height: 30px;
+                        padding: 10px;
+
+                        background-color: rgba(120, 154, 130);
+                        color: antiquewhite;
+                        border-radius: 10px;
+                    }
+
                     .filename {
-                        height: 50px;
-                        padding: 5px;
+                        height: 30px;
+                        padding: 10px;
 
                         background-color: antiquewhite;
                         color: black;
