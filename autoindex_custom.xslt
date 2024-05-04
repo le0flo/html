@@ -7,16 +7,20 @@
                 <style>
                     * {
                         margin: 0;
-                        font-family: Tahoma, Verdana, Arial, sans-serif;
+                        font-family: monospace;
                         box-sizing: border-box;
                     }
 
                     a {
                         color: inherit;
-                        text-decoration: inherit;
+                    }
+
+                    h3 {
+                        font-family: Tahoma, Verdana, Arial, sans-serif;
                     }
 
                     .finestra {
+                        width: fit-content;
                         min-height: 200px;
                         margin: 10px;
 
@@ -39,11 +43,12 @@
 
                         background-color: rgba(120, 154, 130);
                         color: antiquewhite;
+                        text-align: left;
                         border-radius: 10px;
                     }
 
                     td {
-                        font-family: monospace;
+                        color: antiquewhite;
                     }
 
                     .filename {
@@ -82,7 +87,6 @@
                 </style>
             </head>
             <body>
-                <h3>Il fileshare di leonardo</h3>
                 <div class="finestra">
                     <a href="https://le0nardo.dev" class="button close"></a>
                     <a href="https://le0nardo.dev" class="button minimize"></a>
