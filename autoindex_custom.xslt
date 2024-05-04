@@ -23,7 +23,10 @@
                         background-color: #13101b;
                         color: white;
                         padding: 10px;
+                        padding-top: 30px;
                         border-radius: 10px;
+
+                        position: relative;
                     }
 
                     th {
@@ -35,6 +38,10 @@
                         border-radius: 10px;
                     }
 
+                    td {
+                        font-family: monospace;
+                    }
+
                     .filename {
                         height: 30px;
                         padding: 10px;
@@ -43,11 +50,40 @@
                         color: black;
                         border-radius: 10px;
                     }
+
+                    table > .button {
+                        width: 10px;
+                    
+                        aspect-ratio: 1/1;
+                        border-radius: 10px;
+                    
+                        position: absolute;
+                        top: 10px;
+                    }
+                    
+                    table > .close {
+                        background-color: #ff605c;
+                        left: 10px;
+                    }
+                    
+                    table > .minimize {
+                        background-color: #ffbd44;
+                        left: 25px;
+                    }
+                    
+                    table > .maximize {
+                        background-color: #00ca4e;
+                        left: 40px;
+                    }
                 </style>
             </head>
             <body>
                 <h3>Il fileshare di leonardo</h3>
                 <table>
+                    <a href="https://le0nardo.dev" class="button close"></a>
+                    <a href="https://le0nardo.dev" class="button minimize"></a>
+                    <a href="https://le0nardo.dev" class="button maximize"></a>
+
                     <tr>
                         <th>Nome</th>
                         <th>Dimensione</th>
