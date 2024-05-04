@@ -2,13 +2,16 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
         <html>
+            <head>
+                <title>Leonardo - Files pubblici</title>
+            </head>
             <body>
-                <h3>Dafshabbat</h3>
-                <table border="0">
-                    <tr bgcolor="#9acd32">
-                        <th>name</th>
-                        <th>size</th>
-                        <th>date</th>
+                <h3>Il fileshare di leonardo</h3>
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Dimensione</th>
+                        <th>Data</th>
                     </tr>
                     <xsl:for-each select="list/*">
                         <xsl:sort select="@mtime" />
@@ -19,9 +22,10 @@
                             <xsl:if test="string-length(@size) &gt; 0">
                                 <xsl:if test="number(@size) &gt; 0">
                                     <xsl:choose>
-                                        <xsl:when test="round(@size div 1024) &lt; 1"><xsl:value-of select="@size" /></xsl:when>
-                                        <xsl:when test="round(@size div 1048576) &lt; 1"><xsl:value-of select="format-number((@size div 1024), '0.0')" />K</xsl:when>
-                                        <xsl:otherwise><xsl:value-of select="format-number((@size div 1048576), '0.00')" />M</xsl:otherwise>
+                                        <xsl:when test="round(@size div 1024) &lt; 1"><xsl:value-of select="@size" /> Bytes</xsl:when>
+                                        <xsl:when test="round(@size div 1048576) &lt; 1"><xsl:value-of select="format-number((@size div 1024), '0.0')" /> Kb</xsl:when>
+                                        <xsl:when test="round(@size div 1073741824) &lt; 1"><xsl:value-of select="format-number((@size div 1048576), '0.0')" /> Mb</xsl:when>
+                                        <xsl:otherwise><xsl:value-of select="format-number((@size div 1073741824), '0.00')" /> Gb</xsl:otherwise>
                                     </xsl:choose>
                                 </xsl:if>
                             </xsl:if>
