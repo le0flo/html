@@ -11,6 +11,11 @@
                         box-sizing: border-box;
                     }
 
+                    a {
+                        color: inherit;
+                        text-decoration: inherit;
+                    }
+
                     table {
                         min-height: 200px;
                         margin: 10px;
@@ -18,6 +23,15 @@
                         background-color: #13101b;
                         color: white;
                         padding: 10px;
+                        border-radius: 10px;
+                    }
+
+                    .filename {
+                        height: 50px;
+                        padding: 5px;
+
+                        background-color: antiquewhite;
+                        color: black;
                         border-radius: 10px;
                     }
                 </style>
@@ -53,7 +67,7 @@
                             <xsl:value-of select="substring(@mtime,12,2)" />:<xsl:value-of select="substring(@mtime,15,2)" />:<xsl:value-of select="substring(@mtime,18,2)" />
                         </xsl:variable>
                         <tr>
-                            <td>
+                            <td class="filename">
                                 <a href="{$name}">
                                     <xsl:value-of select="." />
                                 </a>
