@@ -3,7 +3,7 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title>Leonardo - Files pubblici</title>
+                <title>Leonardo - Finder</title>
                 <style>
                     * {
                         margin: 0;
@@ -15,8 +15,13 @@
                         color: inherit;
                     }
 
-                    h3 {
-                        font-family: Tahoma, Verdana, Arial, sans-serif;
+                    body {
+                        width: 100vw;
+                        height: 100vh;
+                        
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                     }
 
                     .finestra {
@@ -48,7 +53,11 @@
                     }
 
                     td {
+                        padding: 10px;
+
+                        background-color: rgba(150, 150, 150, .5);
                         color: antiquewhite;
+                        border-radius: 10px;
                     }
 
                     .filename {
