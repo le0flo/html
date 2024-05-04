@@ -4,6 +4,23 @@
         <html>
             <head>
                 <title>Leonardo - Files pubblici</title>
+                <style>
+                    * {
+                        margin: 0;
+                        font-family: Tahoma, Verdana, Arial, sans-serif;
+                        box-sizing: border-box;
+                    }
+
+                    table {
+                        min-height: 200px;
+                        margin: 10px;
+                        
+                        background-color: #13101b;
+                        color: white;
+                        padding: 10px;
+                        border-radius: 10px;
+                    }
+                </style>
             </head>
             <body>
                 <h3>Il fileshare di leonardo</h3>
