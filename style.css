@@ -14,7 +14,7 @@ body {
     justify-content: center;
 }
 
-.codice {
+.finestra {
     width: 350px;
     height: 200px;
 
@@ -32,7 +32,7 @@ body {
     transition: 150ms ease-in-out;
 }
 
-.codice > p {
+.finestra > p {
     height: 20px;
 
     font-family: monospace;
@@ -41,37 +41,37 @@ body {
     color: rgb(197, 200, 198);
 }
 
-.codice *::selection {
+.finestra *::selection {
     background-color: #9e7bb5;
     color: antiquewhite;
 }
 
-.codice b {
+.finestra b {
     font-family: inherit;
     font-weight: inherit;
 }
 
-.codice > .tab {
+.finestra > .tab {
     text-indent: 15px;
 }
 
-.codice > .tabb {
+.finestra > .tabb {
     text-indent: 30px;
 }
 
-.codice .keywords {
+.finestra .keywords {
     color: rgb(129, 162, 190);
 }
 
-.codice .names {
+.finestra .names {
     color: rgb(240, 198, 116);
 }
 
-.codice .strings {
+.finestra .strings {
     color: rgb(181, 189, 104);
 }
 
-.codice > .button {
+.finestra > .button {
     width: 10px;
 
     aspect-ratio: 1/1;
@@ -81,17 +81,17 @@ body {
     top: 10px;
 }
 
-.codice > .close {
+.finestra > .close {
     background-color: #ff605c;
     left: 10px;
 }
 
-.codice > .minimize {
+.finestra > .minimize {
     background-color: #ffbd44;
     left: 25px;
 }
 
-.codice > .maximize {
+.finestra > .maximize {
     background-color: #00ca4e;
     left: 40px;
 }
@@ -128,30 +128,7 @@ body {
     font-size: 20px;
 }
 
-.codice:hover, .links:hover {
+.finestra:hover, .links:hover {
     transition: 150ms ease-in-out;
     scale: 105%;
-}
-
-.codered {
-    background-color: #6e100c;
-}
-
-.codered > h1 {
-    width: 30px;
-
-    font-size: 30px;
-
-    aspect-ratio: 1/1;
-    position: absolute;
-    top: calc(50% - 15px);
-    left: calc(50% - 15px);
-}
-
-.codered > h3 {
-    font-family: monospace;
-
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
 }
