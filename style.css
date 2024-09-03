@@ -4,76 +4,106 @@
     box-sizing: border-box;
 }
 
-*::selection {
-    background-color: #9e7bb5;
-    color: antiquewhite;
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ad97e8;
 }
 
 body {
     width: 100vw;
     height: 100vh;
+    padding: 20px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
+    background-color: #373737;
+    color: antiquewhite;
 }
 
-.finestra {
-    width: 350px;
-    height: 200px;
+.links {
+    width: 100%;
+    padding: 10px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 
-    background-color: #13101b;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-
-    position: relative;
+    font-size: 20px;
 }
 
-.finestra > .button {
-    width: 10px;
-
-    aspect-ratio: 1/1;
-    border-radius: 10px;
-
-    position: absolute;
-    top: 10px;
-}
-
-.finestra > .close {
-    background-color: #ff605c;
-    left: 10px;
-}
-
-.finestra > .minimize {
-    background-color: #ffbd44;
-    left: 25px;
-}
-
-.finestra > .maximize {
-    background-color: #00ca4e;
-    left: 40px;
-}
-
-.finestra > .appicon {
-    width: 35px;
+.card {
+    height: calc(100vh - 50px);
 
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    gap: 20px;
 
-    aspect-ratio: 1;
-    color: antiquewhite;
-    text-decoration: none;
+    border-radius: 10px;
 }
 
-.finestra > .appicon > i {
-    font-size: 20px;
+.description {
+    width: 350px;
+    padding: 50px 0;
+}
+
+.description > #user-photo {
+    width: 100px;
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+}
+
+.description > h1 {
+    text-align: center;
+}
+
+.smallcard {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+
+    color: #373737;
+    border-radius: 10px;
+}
+
+.smallcard > p {
+    margin: 20px 0 10px 0;
+}
+
+.curriculum {
+    background-color: #ad97e8;
+}
+
+.curriculum > a {
+    padding: 10px;
+
+    background-color: blueviolet;
+    border-radius: 5px;
+}
+
+.contactme {
+    background-color: #78e3af;
+}
+
+.homepage {
+    width: calc(100vw - 600px);
+    padding: 10px;
+
+    align-items: start;
 }
